@@ -18,12 +18,12 @@ public class HomePage extends TopMenuSection {
   public static By SIMPLE_SNACK_BAR = css("simple-snack-bar span");
   public static By ITEMS_PER_PAGE=ariaLabel("Items per page:");//id("mat-select-0");
   public static By OPTION_24=xpath("//span[contains(text(), '24')]");
-  public static By BLOCK_NAME=css ("div[class='container mat-typography']");
+  public static By BLOCK_NAME=css("div.item-name");
   public static By ADD_TO_BASKET_BUTTON;
   public static By PRODUCT_INFO_BLOCK=css("app-product-details[class='ng-star-inserted']");
-  public static By PRODUCT_INFO_PRICE;
-  public static By PRODUCT_INFO_CLOSE;
-  public static By REVIEWS_EXPAND;
+  public static By PRODUCT_INFO_PRICE = css("p[class='item-price']");
+  public static By PRODUCT_INFO_CLOSE= css("button[aria-label='Close Dialog']");
+  public static By REVIEWS_EXPAND=css("mat-expansion-panel[aria-label='Expand for Reviews']");
   public static By COMMENT_SECTION;
   public static By REVIEW_TEXT_FIELD;
   public static By SUBMIT_BUTTON;
