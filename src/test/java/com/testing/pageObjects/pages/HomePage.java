@@ -16,11 +16,11 @@ public class HomePage extends TopMenuSection {
   public static By ALL_PRODUCTS_TITLE = text("All Products");
   public static By SIMPLE_SNACK_BAR_PAGE_RELOAD_BUTTON = css("simple-snack-bar button");
   public static By SIMPLE_SNACK_BAR = css("simple-snack-bar span");
-  public static By ITEMS_PER_PAGE;
-  public static By OPTION_24;
-  public static By BLOCK_NAME;
+  public static By ITEMS_PER_PAGE=ariaLabel("Items per page:");//id("mat-select-0");
+  public static By OPTION_24=xpath("//span[contains(text(), '24')]");
+  public static By BLOCK_NAME=css ("div[class='container mat-typography']");
   public static By ADD_TO_BASKET_BUTTON;
-  public static By PRODUCT_INFO_BLOCK;
+  public static By PRODUCT_INFO_BLOCK=css("app-product-details[class='ng-star-inserted']");
   public static By PRODUCT_INFO_PRICE;
   public static By PRODUCT_INFO_CLOSE;
   public static By REVIEWS_EXPAND;
