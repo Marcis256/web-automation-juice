@@ -14,8 +14,8 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class DeliveryMethodPage extends AddressSelectPage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By DELIVERY_SPEED_TITLE;
-  public static By CONTINUE_BUTTON;
+  public static By DELIVERY_SPEED_TITLE=text("Delivery Address");
+  public static By CONTINUE_BUTTON=ariaLabel("Proceed to delivery method selection");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
   public void waitForPageToLoad(){
@@ -24,8 +24,8 @@ public class DeliveryMethodPage extends AddressSelectPage {
   }
 
   public void performSelectDeliverySpeed(DataTable data){
-    String deliverySpeed = null;;
-    Boolean found = null;;
+    String deliverySpeed = null;
+    Boolean found = null;
 
     for (Map<String, String> map : dataToMap(data)) {
       deliverySpeed = map.get("Delivery speed");

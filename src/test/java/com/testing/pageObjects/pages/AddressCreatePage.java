@@ -8,14 +8,14 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class AddressCreatePage extends AddressSelectPage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By CREATE_AN_ADDRESS_TITLE;
-  public static By COUNTRY_FIELD;
-  public static By NAME_FIELD;
-  public static By MOBILE_NUMBER_FIELD;
-  public static By ZIP_CODE_FIELD;
-  public static By ADDRESS_FIELD;
-  public static By CITY_FIELD;
-  public static By STATE_FIELD;
+  public static By CREATE_AN_ADDRESS_TITLE = text("Add New Address");
+  public static By COUNTRY_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(1)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
+  public static By NAME_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(2)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
+  public static By MOBILE_NUMBER_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(3)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
+  public static By ZIP_CODE_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(4)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
+  public static By ADDRESS_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(5)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>textarea");
+  public static By CITY_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(6)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
+  public static By STATE_FIELD = css("div[id=address-form]>mat-form-field:nth-of-type(7)>div>div:nth-of-type(1)>div[class^=mat-form-field-infix]>input");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
   public void waitForPageToLoad(){

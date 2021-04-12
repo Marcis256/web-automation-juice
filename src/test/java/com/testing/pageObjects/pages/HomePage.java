@@ -19,14 +19,14 @@ public class HomePage extends TopMenuSection {
   public static By ITEMS_PER_PAGE=ariaLabel("Items per page:");//id("mat-select-0");
   public static By OPTION_24=xpath("//span[contains(text(), '24')]");
   public static By BLOCK_NAME=css("div.item-name");
-  public static By ADD_TO_BASKET_BUTTON;
+  public static By ADD_TO_BASKET_BUTTON=ariaLabel("Add to Basket");
   public static By PRODUCT_INFO_BLOCK=css("app-product-details[class='ng-star-inserted']");
   public static By PRODUCT_INFO_PRICE = css("p[class='item-price']");
   public static By PRODUCT_INFO_CLOSE= css("button[aria-label='Close Dialog']");
-  public static By REVIEWS_EXPAND=css("mat-expansion-panel[aria-label='Expand for Reviews']");
-  public static By COMMENT_SECTION;
-  public static By REVIEW_TEXT_FIELD;
-  public static By SUBMIT_BUTTON;
+  public static By REVIEWS_EXPAND=ariaLabel("Expand for Reviews");//css("div[class='mat-expansion-panel-body ng-tns-c155-32']");
+  public static By COMMENT_SECTION=id("cdk-accordion-child-0");//text("K33p5 y0ur ju1cy 5plu773r 70 y0ur53lf!");css("div[class='mat-expansion-panel-body ng-tns-c156-60']")
+  public static By REVIEW_TEXT_FIELD=ariaLabel("Text field to review a product");
+  public static By SUBMIT_BUTTON=id("submitButton");
 
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {

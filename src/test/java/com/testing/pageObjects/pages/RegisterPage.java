@@ -14,15 +14,15 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class RegisterPage extends TopMenuSection {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By USER_REGISTRATION_TITLE;
-  public static By EMAIL_FIELD;
-  public static By PASSWORD_FIELD;
-  public static By REPEAT_PASSWORD_FIELD;
-  public static By SECURITY_QUESTION;
-  public static By NAME_OF_FAVORITE_PET_OPTION;
-  public static By SECURITY_QUESTION_LIST;
-  public static By SECURITY_ANSWER_FIELD;
-  public static By REGISTRATION_BUTTON;
+  public static By USER_REGISTRATION_TITLE= text("User Registration");
+  public static By EMAIL_FIELD=id("emailControl");
+  public static By PASSWORD_FIELD=ariaLabel("Field for the password");
+  public static By REPEAT_PASSWORD_FIELD=id("repeatPasswordControl");
+  public static By SECURITY_QUESTION=css("div[id^='mat-select-value-']");//css("mat-select-value-9");
+  public static By NAME_OF_FAVORITE_PET_OPTION=text(" Name of your favorite pet? ");
+  public static By SECURITY_QUESTION_LIST=css("div[id^=mat-select][role=listbox]");
+  public static By SECURITY_ANSWER_FIELD=id("securityAnswerControl");
+  public static By REGISTRATION_BUTTON=id("registerButton");
 
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------

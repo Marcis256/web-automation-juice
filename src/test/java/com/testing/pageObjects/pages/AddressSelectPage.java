@@ -15,9 +15,9 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class AddressSelectPage extends BasketPage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By SELECT_AN_ADDRESS_TITLE;
-  public static By CONTINUE_BUTTON;
-  public static By ADD_NEW_ADDRESS_BUTTON;
+  public static By SELECT_AN_ADDRESS_TITLE = text("Select an address");
+  public static By CONTINUE_BUTTON = css("button[aria-label='Proceed to payment selection'");
+  public static By ADD_NEW_ADDRESS_BUTTON = css("button[aria-label='Add a new address']");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
   public void waitForPageToLoad(){
@@ -27,7 +27,7 @@ public class AddressSelectPage extends BasketPage {
 
   public void performSelectAddress(DataTable data){
     String address = null;
-    Boolean found = null;;
+    Boolean found = null;
 
     for (Map<String, String> map : dataToMap(data)) {
       address = map.get("Address");
